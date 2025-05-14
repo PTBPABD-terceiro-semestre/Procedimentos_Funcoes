@@ -1,3 +1,14 @@
+/*
+Questão 01. Crie um procedimento chamado student_grade_points segundo os critérios abaixo:
+
+a. Utilize como parâmetro de entrada o conceito. Exemplo: A+, A-, ...
+
+b. Retorne os atributos das tuplas: Nome do estudante, Departamento do estudante, Título do curso, 
+Departamento do curso, Semestre do curso, Ano do curso, Pontuação alfanumérica, Pontuação numérica.
+
+c. Filtre as tuplas utilizando o parâmetro de entrada.
+*/
+
 CREATE PROCEDURE DBO.STUDENT_GRADE_POINTS @STUDENT_GRADE VARCHAR(2) 
 AS 
 BEGIN
@@ -29,3 +40,17 @@ BEGIN
 END;
 
 EXEC DBO.STUDENT_GRADE_POINTS 'A';
+
+/*
+Questão 02.
+
+Crie uma função chamada return_instructor_location segundo os critérios abaixo:
+
+a. Utilize como parâmetro de entrada o nome do instrutor.
+
+b. Retorne os atributos das tuplas: Nome do instrutor, Curso ministrado, 
+Semestre do curso, Ano do curso, prédio e número da sala na qual o curso foi ministrado
+
+c. Exemplo: SELECT * FROM dbo.return_instructor_location('Gustafsson');
+*/
+
